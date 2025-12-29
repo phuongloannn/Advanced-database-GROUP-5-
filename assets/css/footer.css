@@ -1,0 +1,43 @@
+.payment-methods {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.payment-methods img {
+    max-width: 35px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.social-links img {
+    width: 25px;
+    height: 25px;
+    display: block;
+    object-fit: contain;
+}
+
+.bo-cong-thuong-logo {
+    max-width: 100px;
+    height: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Ensure images are visible */
+img {
+    opacity: 1;
+    visibility: visible;
+} 

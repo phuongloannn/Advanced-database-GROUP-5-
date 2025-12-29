@@ -1,0 +1,2 @@
+ALTER TABLE `products` 
+ADD COLUMN IF NOT EXISTS `trending` TINYINT(1) DEFAULT 0; 

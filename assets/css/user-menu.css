@@ -1,0 +1,150 @@
+.user-menu-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.user-menu-trigger {
+    background: none;
+    border: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+}
+
+.user-menu-trigger:hover {
+    color: #0d6efd;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #495057;
+    font-size: 14px;
+}
+
+.user-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 220px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 8px 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+}
+
+.user-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.user-menu-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-details h5 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user-details p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.user-menu-items {
+    padding: 8px 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+}
+
+.menu-item i {
+    width: 16px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.menu-divider {
+    height: 1px;
+    background: #eee;
+    margin: 8px 0;
+}
+
+.logout-item {
+    color: #dc3545;
+}
+
+.logout-item:hover {
+    background-color: #fff5f5;
+    color: #dc3545;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .user-menu {
+        background: #2d3436;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .user-menu-header {
+        border-bottom-color: #404040;
+    }
+
+    .menu-item {
+        color: #fff;
+    }
+
+    .menu-item:hover {
+        background-color: #3d4144;
+    }
+
+    .menu-divider {
+        background: #404040;
+    }
+
+    .user-details h5 {
+        color: #fff;
+    }
+
+    .user-details p {
+        color: #aaa;
+    }
+} 

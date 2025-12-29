@@ -1,0 +1,18 @@
+Options -Indexes
+<FilesMatch "(?i)\.(php|php3|php4|php5|phtml|pl|py|jsp|asp|htm|html|shtml|sh|cgi)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+<Files ~ "^\.">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+AddType image/jpeg .jpg .jpeg
+AddType image/png .png
+AddType image/gif .gif 
